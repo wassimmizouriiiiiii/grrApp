@@ -1,0 +1,96 @@
+<!-- Inclure Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <div class="container mt-5">
+    <h2 class="text-center">Formulaire de Réservation</h2>
+    <form>
+      <!-- Informations de base -->
+      <div class="mb-3">
+        <label for="nom" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="nom" placeholder="Entrez le nom">
+      </div>
+      <div class="mb-3">
+        <label for="prenom" class="form-label">Prénom</label>
+        <input type="text" class="form-control" id="prenom" placeholder="Entrez le prénom">
+      </div>
+      <div class="mb-3">
+        <label for="direction" class="form-label">Direction/Sous Direction</label>
+        <input type="text" class="form-control" id="direction" placeholder="Entrez la direction">
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="date" class="form-label">Date ou Période</label>
+          <input type="date" class="form-control" id="date">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="horaire" class="form-label">Horaire</label>
+          <input type="text" class="form-control" id="horaire" placeholder="Ex : Toute la journée">
+        </div>
+      </div>
+
+      <!-- Type d'accès -->
+      <div class="mb-3">
+        <label class="form-label">Type d'accès</label><br>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="formation">
+          <label class="form-check-label" for="formation">Formation</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="conference">
+          <label class="form-check-label" for="conference">Conférence</label>
+        </div>
+      </div>
+
+      <!-- Matériels demandés -->
+      <div class="mb-3">
+        <label class="form-label">Matériels demandés</label><br>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="videoProjecteur">
+          <label class="form-check-label" for="videoProjecteur">Vidéo Projecteur</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="television">
+          <label class="form-check-label" for="television">Télévision</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="tableauInteractif">
+          <label class="form-check-label" for="tableauInteractif">Tableau Interactif</label>
+        </div>
+      </div>
+
+      <!-- Disposition de la salle -->
+      <div class="mb-3">
+        <label class="form-label">Disposition de la salle</label><br>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="disposition" id="enReunion" value="enReunion">
+          <label class="form-check-label" for="enReunion">En Réunion</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="disposition" id="styleCinema" value="styleCinema">
+          <label class="form-check-label" for="styleCinema">Style Cinéma</label>
+        </div>
+      </div>
+
+      <!-- Nombre de participants -->
+      <div class="mb-3">
+        <label for="participants" class="form-label">Nombre de participants</label>
+        <input type="number" class="form-control" id="participants" placeholder="Entrez le nombre de participants">
+      </div>
+
+      <!-- Raison de la réservation -->
+      <div class="mb-3">
+        <label for="raison" class="form-label">Raison de la réservation</label>
+        <textarea class="form-control" id="raison" rows="3" placeholder="Décrivez la raison"></textarea>
+      </div>
+
+      
+
+
+      <!-- Boutons -->
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+      <button type="reset" class="btn btn-secondary ms-2">Réinitialiser</button>
+    </form>
+  </div>
+
+
+
